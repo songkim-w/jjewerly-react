@@ -1,38 +1,462 @@
 .App {
+  height: 100%;
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
+h1{
+  font-family: 'Yeseva One', cursive;
+
+}
+
+a,Link{
+  color: rgb(29, 29, 31);
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,Link:hover{
+  color: rgb(29, 29, 31);
+}
+
+h3{
+  font-family: 'Yeseva One', cursive;
+}
+
+button{
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.carousel__margin{
+  margin-top: 6rem;
+}
+
+.nav-top--container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: white;
+  border-bottom: 1px solid #cecece ;
+}
+
+.menu--icon{
+  opacity: 0;
+  margin-left: 4rem;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0;
+  font-size: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-top--right {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 4rem;
+}
+
+.nav-top--right>div{
+  margin-left: 1rem
+}
+
+
+
+.nav-bottom--container{
+  width: 100%;
+  position: fixed;
+  z-index: 98;
+  padding: 1rem;
+  background-color: #1d1d1f;
+
+}
+
+.nav-bottom--container>a{
+  padding: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.carousel-inner{
+  height: 30vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.visually-hidden{
+  display: none;
+}
+
+.img-2{
+  transform: translateY(-50%);
+}
+
+.carousel-indicators{
+  margin-bottom: 1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+button[data-bs-target].active{
+  background-color: white;
+
+}
+
+
+.carousel-item {
+  transition: transform 2.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+
+
+.card--img{
+  object-fit: cover;
+}
+
+.banner--container{
+  display: flex;
+  width: 100%;
+  margin-top: -3rem;
+  background-color:bisque;
+}
+
+.banner--item{
+  height: 24rem;
+
+}
+
+.banner--item:nth-child(1){
+  width: 50%;
+}
+
+.banner--item:nth-child(2){
+  width: 50%;
+
+}
+
+.banner--text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; 
+}
+
+.banner--text h2{
+  font-family: 'Yeseva One', cursive;
+}
+
+.banner--text p:nth-child(3){
+  margin-bottom: 0;
+  font-family: 'Yeseva One', cursive;
+}
+
+
+
+.shoplist--container{
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+}
+
+.img__round{
+  width: 8em;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.shop--list h6{
+  margin-top: 1rem;
+}
+
+.event--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70vh;
+  background-position: center;
+}
+
+.event--container p{
+  color: white;
+  text-transform: capitalize;
+}
+
+.event--container p:nth-child(1){
+  margin-bottom: 0;
+}
+
+.event--container button{
+  width: 10rem;
+  padding: 0.8rem 1rem;
+  background-color: white;
+  border: none;
+}
+
+.discover--container{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 8rem;
+}
+
+.discover--container h3{
+  transform: translateY(-100%);
+}
+
+.discover--item--container{
+  position: relative;
+}
+
+.discover--item{
+  position: absolute;
+  background-color: white;
+  background-size: cover;
+}
+
+.discover--item h6{
+  transform: translate3d(-30%, -110%, 0);
+}
+
+.bestseller--container{
+  width: 20rem;
+  height: 25rem;
+  top: 4rem;
+  left: 12rem;
+  background-image: url(https://images.unsplash.com/photo-1633555232625-d84322ca67f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: left bottom;
+}
+
+.new--arival--container{
+  width: 20rem;
+  height: 22rem;
+  top: -6rem;
+  right: 12rem;
+  background-image: url(https://images.unsplash.com/photo-1631982681280-8ca46226a5c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80);
+}
+
+.shop--style--container{
+  width: 18rem;
+  height: 18rem;
+  top: 20rem;
+  left: 50%;
+  background-image: url(https://images.unsplash.com/photo-1612699180810-df968d9b1832?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-position: bottom;
+}
+
+.product-list--img{
+  width: 20vw;
+  height: 20vw;
+}
+
+
+
+
+
+
+.event-title{
+  font-family: 'Yeseva One', cursive;
+  font-size: 4rem;
+}
+
+.event-button{
+  background-color: rgb(29, 29, 31) !important;
+  color: white;
+}
+
+footer{
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ margin-top: 2rem;
+}
+
+.prodcut-h2{
+  margin-top: 12rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+
+}
+
+
+
+@media(max-width: 1024px){
+  .bestseller--container{
+    left: 8rem;
+
   }
-  to {
-    transform: rotate(360deg);
+  
+  .new--arival--container{
+    right: 8rem;
   }
+  
+  .shop--style--container{
+    left: 60%;
+  }
+
+  .img__round{
+    width: 6em;
+    height: 6rem;
+    border-radius: 100%;
+  }
+}
+
+
+
+@media (max-width: 900px){
+
+  .menu--icon{
+    opacity: 1;
+    pointer-events:unset
+  }
+
+  .nav-bottom--container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  
+  
+  .nav-bottom--container>a{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+  }
+
+
+  .bestseller--container{
+
+    left: 6rem;
+
+  }
+  
+  .new--arival--container{
+    right: 6rem;
+  }
+  
+  .shop--style--container{
+
+    left: 55%;
+
+  }
+
+
+
+}
+
+@media (max-width: 767px) {
+  .discover--item--container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 2rem;
+    position: static;
+    width: 100%;
+
+    
+
+  }
+
+  .discover--item{
+    position: static;
+
+  }
+
+  .event--container{
+    margin-top: 80vh;
+  }
+
+  .banner--container{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .banner--item:nth-child(1){
+    width: 100%;
+  }
+  .banner--item:nth-child(1){
+    width: 100%;
+  }
+
+  .prodcut-h2{
+    margin-top: 8rem;
+
+  }
+  
+
+
+}
+
+@media (max-width: 500px){
+
+  
+  .nav-top--container{
+    justify-content: space-between;
+  }
+
+  .menu--icon{
+    margin-left: 1rem;
+  }
+
+
+  .nav-top--right {
+    margin-right: 1rem;
+  }
+
+
+  .nav-top--container{
+    width: 100vw;
+  }
+
+
+  
+
+  .carousel__margin{
+    margin-top: 6rem;
+  }
+
+  
+
+  .img-2{
+    transform: translateY(0);
+  }
+  
+  .carousel-inner{
+    height: 50vw;
+  }
+
+  .shop--list h6{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+
 }

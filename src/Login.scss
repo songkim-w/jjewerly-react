@@ -1,0 +1,42 @@
+.login{ 
+    padding: 8rem;
+    width: 50%;
+    margin-top: 6rem;
+
+
+    .signin{
+        background-color: rgb(29, 29, 31);
+        color: white;
+        border-radius: 0;
+    }
+
+    button{
+        background: transparent;
+    }
+
+    svg{
+        fill: rgb(29, 29, 31);
+    }
+
+    .form-check-input:checked {
+        background-color: rgb(29, 29, 31);
+    }
+
+    .register{
+        margin-left: 1rem;
+        padding: 0.3rem;
+        border: 2px solid rgb(29, 29, 31);
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    .login{ 
+        width: 100%;
+        padding: 4rem 2rem;
+       
+    }
+}
+

@@ -1,0 +1,25 @@
+.cart{
+    height: 80%;
+    min-height: 80vh;
+
+    .please-search{
+      position: relative;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+    }
+
+    .search-input{
+        width: 50%;
+        margin: 4rem 0;
+        padding: 1rem;
+        border: 4px solid #1d1d1f;
+    }
+}
+
+@media(max-width:425){
+  .search-input{
+    width: 80%;
+
+}
+}

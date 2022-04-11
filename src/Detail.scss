@@ -1,0 +1,44 @@
+.detail-container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 12rem;
+  min-height: 80vh;
+
+  .detail-img{
+    width: 20rem;
+    margin-right: 4rem;
+  }
+
+  .order{
+    margin-right: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: rgb(29, 29, 31);
+    font-weight: bold;
+    color: white;
+    border-radius: 0;
+  }
+
+  .img-con{
+    height: 50%;
+  }
+
+  .back{
+    padding: 0.8rem 1rem;
+    border: 2px solid rgb(29, 29, 31);;
+    border-radius: 0;
+  }
+  
+
+}
+
+@media (max-width: 768px){
+
+  .detail-img{
+    margin-right: 0rem !important;
+  }
+}
+
+

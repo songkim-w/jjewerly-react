@@ -1,0 +1,87 @@
+.cart-container{
+    height: 100vh;
+    text-align: center;
+    text-transform: capitalize;
+
+    h2{
+        padding: 2rem;
+    }
+    .cart-text{
+        padding-top: 4rem;
+        font-size: 1.2em;
+        color: gray;
+    }
+
+    table{
+        margin-top: 2rem;
+    }
+
+    td{
+      vertical-align: middle;
+    
+    }
+   
+    .minus{
+
+        width: 2rem;
+        height: 2rem;
+        color: white;
+        background-color: #1d1d1f;
+        border: none;
+        font-size: 1rem;
+    
+
+    }
+    .plus{
+
+        width: 2rem;
+        height: 2rem;
+        color: white;
+        background-color: #1d1d1f;
+        border: none;
+        font-size: 1rem;
+
+    }
+
+    .delete{
+        width: 6rem;
+        height: 2rem;
+        color: #1d1d1f;
+        background-color: #fff;
+        border: 2px solid #1d1d1f;
+        font-size: 1rem; 
+    }
+    .buy{
+        width: 6rem;
+        height: 2rem;
+        color: white;
+        background-color: #1d1d1f;
+        border: none;
+        font-size: 1rem; 
+    }
+
+
+    button{
+        margin: 1rem;
+    }
+
+    .total-container{
+        width: 100%;
+        max-width: 1024px;
+    }
+
+   .toal-item-con{
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       
+       div{
+           margin-left: 2rem;
+           font-size: 1.2rem;
+           font-weight: bold;
+       }
+   }
+
+  
+
+}
